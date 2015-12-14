@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Juliana's Blog"
 date:   2015-12-13 22:16:39
 categories: jekyll update
 ---
