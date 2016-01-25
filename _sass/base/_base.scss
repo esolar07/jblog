@@ -21,6 +21,11 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing:border-box;
 }
 
 
@@ -89,16 +94,18 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
     text-decoration: none;
-
     &:visited {
-        color: darken($brand-color, 15%);
+        text-decoration: none;
     }
-
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
+    }
+    &:link {
+    text-decoration: none;
+    }
+    &:active {
+        text-decoration: none;
     }
 }
 

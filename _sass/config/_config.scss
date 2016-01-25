@@ -1,3 +1,4 @@
+// jekyll serve --force_polling
 @charset "utf-8";
 
 // Our variables
@@ -36,4 +37,9 @@ $on-laptop:        800px;
     @media screen and (max-width: $device) {
         @content;
     }
+}
+
+// px to em converter function
+@function em($t, $c:$base-font-size){
+  @return ($t / $c) * 1em;  
 }
