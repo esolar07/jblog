@@ -6,8 +6,9 @@
     position: relative;
     border-top: 10px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 200px;
-    background-color: $header-color;
+    min-height: 300px;
+    background: url("https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/15/155/155934/composition-f.jpg?1407300846"), linear-gradient(45deg, $header-color, $header-color2);
+    background-blend-mode: darken;
 }
 
 
@@ -138,39 +139,6 @@
         width:         calc(100% - (#{$spacing-unit} / 2));
     }
 }
-
-
-
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
 
 
 /**

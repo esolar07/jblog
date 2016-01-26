@@ -1,16 +1,20 @@
 /*
-Error: Invalid CSS after "...x-highlighting"": expected "{", was ";"
-        on line 12 of ./css/main.scss
+Error: Invalid CSS after "..."config/config"": expected "{", was ";"
+        on line 7 of ./css/main.scss
 
-7: @import
-8: 		"config/config",
-9:         "base/base",
-10:         "layout/layout",
-11:         "syntax-highlighting"
-12: ;
+2: # Only the main Sass file needs front matter (the dashes are enough)
+3: ---
+4: 
+5: 
+6: // Import partials from `sass_dir` (defaults to `_sass`)
+7: @import "config/config";
+8: @import "base/base";
+9: @import "layout/layout";
+10: @import "modules/modules";
+11: @import "syntax-highlighting";
 
 Backtrace:
-./css/main.scss:12
+./css/main.scss:7
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:1164:in `expected'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:1098:in `expected'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/scss/parser.rb:1093:in `tok!'
@@ -27,17 +31,16 @@ C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
 C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:293:in `watch'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin.rb:108:in `method_missing'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
-C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/bin/sass:13:in `<top (required)>'
-C:/RailsInstaller/Ruby1.9.3/bin/sass:23:in `load'
-C:/RailsInstaller/Ruby1.9.3/bin/sass:23:in `<main>'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:328:in `block in watch'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:291:in `call'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:291:in `_process_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:255:in `block in _wait_for_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:238:in `loop'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:238:in `_wait_for_changes'
+C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/listen-2.10.0/lib/listen/listener.rb:327:in `block in _start_wait_thread'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"...x-highlighting\"\": expected \"{\", was \";\"\A         on line 12 of ./css/main.scss\A \A 7: @import\A 8: 		\"config/config\",\A 9:         \"base/base\",\A 10:         \"layout/layout\",\A 11:         \"syntax-highlighting\"\A 12: ;"; }
+  content: "Error: Invalid CSS after \"...\"config/config\"\": expected \"{\", was \";\"\A         on line 7 of ./css/main.scss\A \A 2: # Only the main Sass file needs front matter (the dashes are enough)\A 3: ---\A 4: \A 5: \A 6: // Import partials from `sass_dir` (defaults to `_sass`)\A 7: @import \"config/config\";\A 8: @import \"base/base\";\A 9: @import \"layout/layout\";\A 10: @import \"modules/modules\";\A 11: @import \"syntax-highlighting\";"; }

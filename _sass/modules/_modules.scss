@@ -1,7 +1,7 @@
 
 
 .site-title {
-    font-size: em(36px);
+    font-size: em(60px);
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
@@ -12,7 +12,6 @@
 .site-nav {
     float: right;
     line-height: 56px;
-    border: 5px solid yellow;
     .menu-icon {
         display: none;
     }
@@ -66,4 +65,42 @@
             padding: 5px 10px;
         }
     }
+}
+
+
+/**
+ * Page content
+ */
+.page-content {
+    position:relative;
+    margin-top: -35px;
+    margin-right:auto;
+    margin-left:auto;
+    padding: $spacing-unit 0;
+    width:75%;
+    background-color:white;
+    box-shadow:0 0 15px black;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
 }
