@@ -6,7 +6,7 @@
     position: relative;
     border-top: 10px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 300px;
+    min-height: 280px;
     background: url("https://d3ui957tjb5bqd.cloudfront.net/images/screenshots/products/15/155/155934/composition-f.jpg?1407300846"), linear-gradient(45deg, $header-color, $header-color2);
     background-blend-mode: darken;
 }
@@ -14,7 +14,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 57px;
     .menu-icon {
         display: none;
     }

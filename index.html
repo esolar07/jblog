@@ -4,8 +4,8 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
-
+  <h1 class="page-heading">Hi! I'm <strong>Juliana N. Blaum</strong></h1>
+  <p class="page-text">{{ site.description }}</p>
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
@@ -17,7 +17,8 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  
+  <!-- Not needed right now or at all -->
+  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>
