@@ -1,4 +1,16 @@
 
+/**
+ * Page heading
+ */
+.page-heading {
+    margin-bottom: 25px;
+    font-size: em(60px);
+    strong{
+        font-weight: 700;
+        color:red;
+    }
+}
+
 
 .site-title {
     font-size: em(60px);
@@ -68,14 +80,23 @@
 }
 
 /**
- * Wrappers
+ * Page content
  */
-
-.wrapper1{
-    background:url("../images/j.jpg");
+.page-content {
+    position:relative;
+    margin-top: 35px;
+    margin-right:auto;
+    margin-left:auto;
+    padding: $spacing-unit 0;
+    width:95%;
 }
 
-.wrapper {
+/**
+ * Wrappers
+ */
+.page-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
     max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
@@ -89,30 +110,28 @@
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
+        background:red;
     }
 }
-
 
 
 /**
- * Page content
+ * Page image
  */
-.page-content {
-    position:relative;
-    margin-top: 35px;
-    margin-right:auto;
-    margin-left:auto;
-    padding: $spacing-unit 0;
-    width:85%;
+.page-img{
+    width:em(300px);
+    height:em(300px);
+    background:url("../images/j.jpg");
+    background-repeat:no-repeat;
+    background-size:contain;
+    border-radius:50%;
 }
 
-.page-heading {
-    margin-bottom: 25px;
-    font-size: em(60px);
-    strong{
-        font-weight: 700;
-        color:red;
-    }
+/**
+ * Page intro
+ */
+.page-intro{
+    width: 75%;
 }
 
 .page-text{
