@@ -41,6 +41,12 @@ $on-laptop:        800px;
     }
 }
 
+@mixin media-que($device) {
+    @media screen and (min-width: $device) {
+        @content;
+    }
+}
+
 // px to em converter function
 @function em($t, $c:$base-font-size){
   @return ($t / $c) * 1em;  

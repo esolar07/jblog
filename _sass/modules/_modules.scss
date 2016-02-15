@@ -17,7 +17,14 @@
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
-    float: left;
+    text-align:center;
+}
+
+.site-img{
+    margin-top:20px;
+    margin-left: 35%;
+    width:400px;
+    height:200px;
 }
 
 
@@ -88,7 +95,7 @@
     margin-right:auto;
     margin-left:auto;
     padding: $spacing-unit 0;
-    width:95%;
+    width:90%;
 }
 
 /**
@@ -97,20 +104,19 @@
 .page-wrapper {
     display: flex;
     flex-wrap: wrap;
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    // max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
+    width:100%;
     @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    @include media-que($on-laptop) {
+        width:95%;
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-        background:red;
+        background:green;
     }
 }
 
@@ -119,8 +125,10 @@
  * Page image
  */
 .page-img{
-    width:em(300px);
-    height:em(300px);
+    margin-right:auto;
+    margin-left:auto;
+    width:em(400px);
+    height:em(400px);
     background:url("../images/j.jpg");
     background-repeat:no-repeat;
     background-size:contain;
@@ -131,7 +139,10 @@
  * Page intro
  */
 .page-intro{
-    width: 75%;
+    margin-right: auto;
+    margin-left:auto;
+    padding-left:20px;
+    width: 60%;
 }
 
 .page-text{
