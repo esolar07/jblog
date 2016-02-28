@@ -1,0 +1,38 @@
+
+.is-fadedIn{
+	animation: fadein .5s forwards 1s linear;
+}
+
+.is-imgExpand{
+	animation: imgexpand .5s forwards 1s linear;
+}
+
+// keyframes 
+
+
+@keyframes fadein{
+	from{ 
+		margin-top: -10px;
+		visibility: hidden;
+	}
+	to{
+		margin-top: 0px;
+		visibility: visible;
+	}
+}
+
+
+@keyframes imgexpand{
+	from{
+		margin-top: 100px;
+		width:em(0px);
+    	height:em(0px);
+    	transform: rotate(0deg);
+	}
+	to {
+		margin-top: 0px;;
+		width:em(400px);
+    	height:em(400px);
+    	transform: rotate(360deg);
+	}
+}
