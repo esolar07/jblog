@@ -3,8 +3,10 @@
  * Page heading
  */
 .page-heading {
+    margin-top:-10px;
     margin-bottom: 25px;
     font-size: em(60px);
+    visibility: hidden;
     strong{
         font-weight: 700;
         color:red;
@@ -116,7 +118,6 @@
         width:95%;
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
-        background:green;
     }
 }
 
@@ -129,10 +130,18 @@
     margin-left:auto;
     width:em(400px);
     height:em(400px);
-    background:url("../images/j.jpg");
-    background-repeat:no-repeat;
-    background-size:contain;
     border-radius:50%;
+    .j-img{
+        margin-top: 100px;
+        margin-right:auto;
+        margin-left:auto;
+        width:em(0px);
+        height:em(0px);
+        background:url("../images/j.jpg");
+        background-repeat:no-repeat;
+        background-size:contain;
+        border-radius:50%;
+    }
 }
 
 /**
