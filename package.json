@@ -1,7 +1,7 @@
 {
   "name": "jblog",
   "version": "1.0.0",
-  "description": "Juliana's Blog",
+  "description": "Juliana Blaum's Writing Page",
   "main": "index.html",
   "dependencies": {
     "grunt": "^0.4.5"
