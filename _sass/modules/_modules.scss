@@ -9,7 +9,10 @@
     visibility: hidden;
     strong{
         font-weight: 700;
-        color:red;
+        color:black;
+        // background-image: gradient(linear,0% 0%,25% 100%,from(#ff2c2c),to(#7a5e91));
+        // background-clip: text;
+        // text-fill-color: transparent;
     }
 }
 
@@ -148,10 +151,14 @@
  * Page intro
  */
 .page-intro{
+    visibility: hidden;
     margin-right: auto;
     margin-left:auto;
     padding-left:20px;
-    width: 60%;
+    width: 90%;
+    @include media-que($on-laptop) {
+        width:60%;
+    }
 }
 
 .page-text{
